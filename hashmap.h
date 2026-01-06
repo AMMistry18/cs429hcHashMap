@@ -1,8 +1,19 @@
+#include <stdint.h>
 #ifndef HASHMAP_H
 #define HASHMAP_H
 
+struct linkedNode
+{
+	int key;
+	int val;
+	int taken;
+	struct linkedNode *next;
+};
+
 struct IntToIntHashMap{
-	//TODO: fill this in
+	int length;
+	int count;
+	struct linkedNode *hashTable;
 };
 
 struct IntToIntHashMap* createIntToIntHashMap(int numBuckets);

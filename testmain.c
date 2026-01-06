@@ -9,7 +9,7 @@ bool basicInsertGetTest(){
 	intToIntHashMapInsert(testHMap, 3, 30);
 	int getOne = intToIntHashMapGet(testHMap, 1);
 	if(getOne != 10){
-		printf("Get failiure for key 1,  expected: 10 received: %d\n", getOne);
+		printf("Get failiure for key 1, expected: 10 received: %d\n", getOne);
 		destroyIntToIntHashMap(testHMap);
 		return false;
 	}
